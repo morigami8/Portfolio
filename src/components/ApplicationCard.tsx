@@ -11,7 +11,7 @@ const ApplicationCard = ({
   linkUrl,
 }: CardProps) => {
   return (
-    <article>
+    <article className="card">
       <a
         href={linkUrl}
         target="_blank"
