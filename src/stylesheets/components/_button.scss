@@ -1,5 +1,12 @@
-//Add button css
+// _button.scss
+
+@use '../../../node_modules/sass-mq/mq';
 
 .test {
   background-color: red;
-}
+
+  @include mq.mq($from: tablet) {
+    background-color: aquamarine;
+  }
+  
+ }

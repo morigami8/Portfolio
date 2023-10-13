@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+// index.scss
+// 3. Abstracts
+@use 'abstracts/breakpoints';  // Ensuring that breakpoints are utilized correctly
+
 // 1. Components
-@import
-  'components/button';
+@import 'components/button';  // @import is fine if you don't use variables/mixins/functions from it
 
+// 2. Themes
+@import 
+  'themes/dark',
+  'themes/default';
 
-  // 2. Themes
-  @import
-    'themes/dark',
-    'themes/default';
