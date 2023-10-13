@@ -1,12 +1,11 @@
 // _button.scss
 
-@use '../abstracts/breakpoints' as bp;
-//@use '../../../node_modules/sass-mq/mq';
+@use '../../../node_modules/sass-mq/mq';
 
 .test {
   background-color: red;
 
-  @include bp.mq($from: tablet) {
+  @include mq.mq($from: tablet) {
     background-color: aquamarine;
   }
   
