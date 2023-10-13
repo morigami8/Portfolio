@@ -4,10 +4,22 @@ function App() {
   return (
     <>
       <div>
-        App container
         <div className="header-container">
+          <section className="header-icon">
+            <h2>Morgan Atwood</h2>
+          </section>
           <section className="header-nav">
-            <button className="test">Hello</button>
+            <ul className="nav-list">
+              <li className="nav-link">
+                <a href="#">About Me</a>
+              </li>
+              <li className="nav-link">
+                <a href="#">Skills</a>
+              </li>
+              <li className="nav-link">
+                <a href="#">Projects</a>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
