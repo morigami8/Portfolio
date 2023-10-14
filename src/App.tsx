@@ -7,6 +7,7 @@ function App() {
         <div className="header-container">
           <section className="header-icon">
             <h2>Morgan Atwood</h2>
+            <button className="test">Hello </button>
           </section>
           <section className="header-nav">
             <ul className="nav-list">
