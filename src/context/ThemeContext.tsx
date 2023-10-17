@@ -1,25 +1,39 @@
-import React, { createContext, useState, ReactNode } from 'react';
+//TODOS
+//Make context file from scratch again no hints
+//1. **** 10:47 of youtube video - Continue with Theme Provider ****
+//2. Learn about React Context Providers
+
+import {
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  createContext,
+  useState,
+} from 'react';
 
 type Theme = 'light' | 'dark';
 
-interface ThemeContextProps {
+export interface IThemeContext {
   theme: Theme;
-  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+  setTheme: Dispatch<SetStateAction<Theme>>;
 }
 
-const defaultContextData: ThemeContextProps = {
+const defaultThemeProps: IThemeContext = {
   theme: 'light',
   setTheme: () => {},
 };
-export const ThemeContext =
-  createContext<ThemeContextProps>(defaultContextData);
 
-interface ThemeProviderProps {
+export const ThemeContext = createContext<IThemeContext>(defaultThemeProps);
+
+interface IThemeProvider {
   children: ReactNode;
 }
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const getTheme = localStorage.getItem('theme') as Theme | null;
-  const [theme, setTheme] = useState(getTheme ?? 'light');
+
+export const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
+  const currentTheme = localStorage.getItem('theme') as Theme | null;
+
+  const [theme, setTheme] = useState(currentTheme ?? 'light');
+  localStorage.setItem('theme', theme);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -27,7 +41,3 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-
-//TODOS
-//1. **** 10:47 of youtube video - Continue with Theme Provider ****
-//2. Learn about React Context Providers
