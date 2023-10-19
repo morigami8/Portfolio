@@ -1,7 +1,14 @@
+@use '../../../node_modules/sass-mq/mq';
+
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 3em;
+
+  @include mq.mq($until: tablet) {
+    padding: 0 1em;
+  }
 }
 
 .nav-list {

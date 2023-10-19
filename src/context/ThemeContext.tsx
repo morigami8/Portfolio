@@ -1,7 +1,7 @@
 //TODOS
 //1. **** 10:47 of youtube video - Continue with Theme Provider ****
 //2. Learn about React Context Providers
-
+//Create, Provide, Consume
 import {
   Dispatch,
   ReactNode,
@@ -30,7 +30,7 @@ interface IThemeProvider {
 
 export const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
   const currentTheme = localStorage.getItem('theme') as Theme | null;
-  const [theme, setTheme] = useState(currentTheme ?? 'light');
+  const [theme, setTheme] = useState<Theme>(currentTheme ?? 'light');
 
   localStorage.setItem('theme', theme);
 
