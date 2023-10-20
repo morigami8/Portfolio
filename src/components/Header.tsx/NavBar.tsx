@@ -1,3 +1,5 @@
+import { FaGithub } from 'react-icons/fa';
+import styles from './_header.module.scss';
 type Props = {};
 
 export const NavBar = (props: Props) => {
@@ -10,10 +12,19 @@ export const NavBar = (props: Props) => {
         <li className="nav-link">
           <a href="#">Skills</a>
         </li>
-        <li className="nav-link">
+        <li className={`${styles['nav-link']} width-12 height-12`}>
           <a href="#">Projects</a>
+        </li>
+        <li className={`${styles['nav-link']} width-12 height-12"`}>
+          <a href="https://github.com/morigami8">
+            {' '}
+            <FaGithub />{' '}
+          </a>
         </li>
       </ul>
     </section>
   );
 };
+
+//TODO: Maybe button instead of a tag for theme toggle
+//Use react web page as reference
