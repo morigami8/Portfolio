@@ -12,11 +12,13 @@ export const NavBar = (props: Props) => {
         <li className="nav-link">
           <a href="#">Skills</a>
         </li>
-        <li className={`${styles['nav-link']} width-12 height-12`}>
-          <a href="#">Projects</a>
+        <li className={`${styles['nav-link']}`}>
+          <a className="width-12 height-12" href="#">
+            Projects
+          </a>
         </li>
-        <li className={`${styles['nav-link']} width-12 height-12"`}>
-          <a href="https://github.com/morigami8">
+        <li className={`${styles['nav-link']}`}>
+          <a className="width-12 height-12" href="https://github.com/morigami8">
             {' '}
             <FaGithub />{' '}
           </a>
