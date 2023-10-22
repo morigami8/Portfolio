@@ -1,7 +1,21 @@
 @use '../../../node_modules/sass-mq/mq';
 
+// .header-container {
+//   display: flex;
+//   list-style: none;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0 3em;
+
+//   @include mq.mq($until: tablet) {
+//     padding: 0 1em;
+//   }
+// }
+
 .header-container {
   display: flex;
+  flex-direction: row;
+  font-size: 18px;
   list-style: none;
   align-items: center;
   justify-content: space-between;
@@ -12,20 +26,32 @@
   }
 }
 
+.header-nav {
+  display: flex;
+  gap: .75rem;
+
+}
+
 .nav-list {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   padding: 0;
+  align-items: center;
+  gap: .75rem;
 
   li {
-    margin-right: 1em;
-    display: block;
+    //margin-right: 1em;
+    display: flex;
+    align-items: center;
 
     a {
       text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
   }
 }
