@@ -1,8 +1,10 @@
 @use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
 
 body {
   padding: 0;
   margin: 0;
+  line-height: 30px;
 }
 
 .dark {
@@ -28,10 +30,18 @@ body {
   }
 }
 
+// Dimensions
 .width-12 {
   width: 3rem;
 }
 
 .height-12 {
   height: 3rem;
+}
+
+@media (min-width: 374px) {
+  .xs {
+    @include pad-x(.75rem);
+    @include pad-y(.375rem);
+  }
 }

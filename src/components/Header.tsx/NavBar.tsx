@@ -6,14 +6,18 @@ export const NavBar = (props: Props) => {
   return (
     <section className="header-nav">
       <ul className="nav-list">
-        <li className="nav-link text">
-          <a href="#">About Me</a>
-        </li>
-        <li className="nav-link">
-          <a href="#">Skills</a>
+        <li className={`${styles['nav-link']} text`}>
+          <a className="xs" href="#">
+            About Me
+          </a>
         </li>
         <li className={`${styles['nav-link']}`}>
-          <a className="width-12 height-12" href="#">
+          <a className="xs" href="#">
+            Skills
+          </a>
+        </li>
+        <li className={`${styles['nav-link']}`}>
+          <a className="xs" href="#">
             Projects
           </a>
         </li>
