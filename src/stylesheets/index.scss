@@ -3,6 +3,7 @@
 // index.scss
 // 1. Abstracts
 @use 'abstracts/breakpoints';  // Ensuring that breakpoints are utilized correctly
+@use 'abstracts/mixins';
 
 // 2. Components
 @import 'components/button';  // @import is fine if you don't use variables/mixins/functions from it
