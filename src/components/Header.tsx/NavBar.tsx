@@ -1,8 +1,10 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaMoon } from 'react-icons/fa';
 import styles from './_header.module.scss';
+import { useThemeContext } from '../../context/hooks/useThemeContext';
 type Props = {};
 
 export const NavBar = (props: Props) => {
+  const { theme } = useThemeContext();
   return (
     <section className="header-nav">
       <ul className="nav-list">
@@ -22,7 +24,15 @@ export const NavBar = (props: Props) => {
           </a>
         </li>
         <li className={`${styles['nav-link']}`}>
-          <a className="width-12 height-12" href="https://github.com/morigami8">
+          <button className="width-12 height-12 rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark">
+            {theme === 'light' ? <FaGithub /> : <FaMoon />}
+          </button>
+        </li>
+        <li className={`${styles['nav-link']}`}>
+          <a
+            className="width-12 height-12 rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark"
+            href="https://github.com/morigami8"
+          >
             {' '}
             <FaGithub />{' '}
           </a>
