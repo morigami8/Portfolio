@@ -5,7 +5,18 @@
 .nav-link {
 
   &:hover {
-    background-color: rgba(35,39,47,.05);
+    //background-color: rgba(35,39,47,.05);
     border-radius: 9999px;
   }
+}
+
+li > button {
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+  display: flex;
+  font-size: 100%;
+  text-transform: none;
+  color: white;
+  cursor: pointer;
 }

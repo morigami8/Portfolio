@@ -10,7 +10,7 @@ body {
 .dark {
 
   .background {
-    background-color: $black-800
+    background-color: #23272f
   }
 
   h1, h2, p, li > a {
@@ -44,4 +44,26 @@ body {
     @include pad-x(.75rem);
     @include pad-y(.375rem);
   }
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+:is(.light .hover\:bg-primary):hover {
+    background-color: rgba(35,39,47,.05);
+    //background-color: red;
+}
+
+:is(.dark .hover\:bg-primary-dark):hover {
+  background-color: rgba(246,247,249,.05);
+  //background-color: red;
 }
