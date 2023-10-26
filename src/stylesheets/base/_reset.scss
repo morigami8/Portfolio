@@ -7,15 +7,28 @@ body {
   line-height: 30px;
 }
 
+//Themes
 .dark {
 
   .background {
-    background-color: #23272f
+    //background-color: #23272f
+    background-color: $black-800
   }
 
   h1, h2, p, li > a {
     color: $white-900
   }
+
+  .nav-list {
+    li > button {
+      color: white;
+    }
+  }
+}
+
+:is(.dark .hover\:bg-primary-dark):hover {
+  background-color: rgba(246,247,249,.10);
+  //background-color: red;
 }
 
 
@@ -29,6 +42,13 @@ body {
     color: $black-800
   }
 }
+
+
+:is(.light .hover\:bg-primary):hover {
+  background-color: rgba(35,39,47,.05);
+  //background-color: red;
+}
+
 
 // Dimensions
 .width-12 {
@@ -50,6 +70,7 @@ body {
   border-radius: 9999px;
 }
 
+//Center
 .items-center {
   align-items: center;
 }
@@ -58,12 +79,3 @@ body {
   justify-content: center;
 }
 
-:is(.light .hover\:bg-primary):hover {
-    background-color: rgba(35,39,47,.05);
-    //background-color: red;
-}
-
-:is(.dark .hover\:bg-primary-dark):hover {
-  background-color: rgba(246,247,249,.05);
-  //background-color: red;
-}
