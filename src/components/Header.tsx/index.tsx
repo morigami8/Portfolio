@@ -4,7 +4,6 @@ import { NavBar } from './NavBar';
 import styles from './_header.module.scss';
 
 const Header = () => {
-  console.log(styles);
   return (
     <>
       <div
