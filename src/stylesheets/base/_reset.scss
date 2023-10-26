@@ -1,3 +1,4 @@
+@use '../../../node_modules/sass-mq/mq';
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 
@@ -59,6 +60,12 @@ body {
   height: 3rem;
 }
 
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+
 @media (min-width: 374px) {
   .xs {
     @include pad-x(.75rem);
@@ -66,10 +73,15 @@ body {
   }
 }
 
-.rounded-full {
-  border-radius: 9999px;
+@media (min-width: 768px) {
+    .md\:flex {
+      display: flex;
+  } 
 }
 
+// .hidden {
+//   display: none;
+// }
 //Center
 .items-center {
   align-items: center;
@@ -79,3 +91,10 @@ body {
   justify-content: center;
 }
 
+
+/* TODO:
+- Make hidden work as nav bar shrinks for li items
+- Make theme button and github icon their own div with flex
+- Start hamburger list
+
+*/

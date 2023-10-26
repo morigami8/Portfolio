@@ -15,8 +15,3 @@ $show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
   $breakpoints: $breakpoints,
   $show-breakpoints: $show-breakpoints
 );
-
-@mixin test-mixin {
-  color: blue;
-}
-
