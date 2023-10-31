@@ -44,6 +44,10 @@ body {
   }
 }
 
+.flex {
+  display: flex;
+}
+
 
 :is(.light .hover\:bg-primary):hover {
   background-color: rgba(35,39,47,.05);

@@ -49,7 +49,7 @@ export const NavBar = (props: Props) => {
         </li>
         <li className={`${styles['nav-link']}`}>
           <a
-            className="width-12 height-12 rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark"
+            className="width-12 height-12 flex rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark"
             href="https://github.com/morigami8"
           >
             {' '}
