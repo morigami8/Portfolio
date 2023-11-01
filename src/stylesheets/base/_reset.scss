@@ -75,6 +75,16 @@ body {
     @include pad-x(.75rem);
     @include pad-y(.375rem);
   }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  // .hidden {
+  //   display: none;
+  // }
 }
 
 @media (min-width: 768px) {
@@ -83,9 +93,7 @@ body {
   } 
 }
 
-// .hidden {
-//   display: none;
-// }
+
 //Center
 .items-center {
   align-items: center;
@@ -97,7 +105,6 @@ body {
 
 
 /* TODO:
-- Make hidden work as nav bar shrinks for li items
 - Make theme button and github icon their own div with flex
 - Start hamburger list
 

@@ -25,7 +25,7 @@ export const NavBar = (props: Props) => {
         </li>
         <li className={`${styles['nav-link']}`}>
           <a
-            className="xs hover:bg-primary hover:bg-primary-dark rounded-full"
+            className="xs hidden md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
             href="#"
           >
             Skills
@@ -33,7 +33,7 @@ export const NavBar = (props: Props) => {
         </li>
         <li className={`${styles['nav-link']}`}>
           <a
-            className="xs hover:bg-primary hover:bg-primary-dark rounded-full"
+            className="xs hidden md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
             href="#"
           >
             Projects
