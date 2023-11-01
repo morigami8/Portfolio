@@ -25,6 +25,12 @@ body {
       color: white;
     }
   }
+
+  .header-icon {
+    button {
+      color: white;
+    }
+  }
 }
 
 :is(.dark .hover\:bg-primary-dark):hover {
@@ -76,21 +82,25 @@ body {
     @include pad-y(.375rem);
   }
 
+  .header-icon {
+    button {
+      margin-right: 0.5em;
+    }
+  }
+
   .hidden {
     display: none;
   }
 }
 
-@media (max-width: 374px) {
-  // .hidden {
-  //   display: none;
-  // }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 740px) {
     .md\:flex {
       display: flex;
   } 
+
+  .nav-hidden {
+    display: none;
+  }
 }
 
 
