@@ -25,6 +25,12 @@ body {
       color: white;
     }
   }
+
+  .header-icon {
+    button {
+      color: white;
+    }
+  }
 }
 
 :is(.dark .hover\:bg-primary-dark):hover {
@@ -75,17 +81,29 @@ body {
     @include pad-x(.75rem);
     @include pad-y(.375rem);
   }
+
+  .header-icon {
+    button {
+      margin-right: 0.5em;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 740px) {
     .md\:flex {
       display: flex;
   } 
+
+  .nav-hidden {
+    display: none;
+  }
 }
 
-// .hidden {
-//   display: none;
-// }
+
 //Center
 .items-center {
   align-items: center;
@@ -97,7 +115,6 @@ body {
 
 
 /* TODO:
-- Make hidden work as nav bar shrinks for li items
 - Make theme button and github icon their own div with flex
 - Start hamburger list
 
