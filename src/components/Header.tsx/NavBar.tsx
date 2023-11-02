@@ -2,9 +2,8 @@ import { FaGithub, FaMoon, FaSun } from 'react-icons/fa';
 import styles from './_header.module.scss';
 import { useThemeContext } from '../../context/hooks/useThemeContext';
 import { Theme } from '../../context/ThemeContext';
-type Props = {};
 
-export const NavBar = (props: Props) => {
+export const NavBar = () => {
   const { theme, setTheme } = useThemeContext();
 
   const handleOnClick = async () => {
@@ -60,6 +59,3 @@ export const NavBar = (props: Props) => {
     </section>
   );
 };
-
-//TODO: Maybe button instead of a tag for theme toggle
-//Use react web page as reference
