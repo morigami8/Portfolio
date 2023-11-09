@@ -10,34 +10,39 @@ body {
 
 //Themes
 .dark {
+  background-color: $brand-blue;
 
   .background {
     //background-color: #23272f
-    background-color: $black-800
+    background-color: $brand-blue
   }
 
   h1, h2, p, li > a {
-    color: $white-900
+    color: $brand-white
   }
 
   .nav-list {
     li > button {
-      color: white;
+      color: $brand-white;
     }
   }
 
   .header-icon {
     button {
-      color: white;
+      color: $brand-white;
     }
   }
 
   .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
-    background-color: white;
+    background-color: $brand-white;
   }
 
   .menu__box {
-    background-color: #333;
+    background-color: #162052;
+  }
+
+  .content {
+    border: 6px solid rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -48,13 +53,30 @@ body {
 
 
 .light {
-
+  background-color: $white-600;
   .background {
-    background-color: $white-900
+    background-color: $white-600;
   }
 
   h1, h2, p, li > a {
     color: $black-800
+  }
+
+  .box::after {
+    //background-color: white;
+  }
+
+  .content h2 {
+    color: $brand-white;
+  }
+  
+  .content a {
+    background: $black-800;
+    color: $brand-white;
+  }
+
+  .portfolio-image {
+    background: $white-600;
   }
 }
 
