@@ -1,7 +1,11 @@
 @use '../../stylesheets/abstracts/mixins' as *;
 
 .header-container {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, .2);
+  box-shadow: 10px 2px 4px rgba(0, 0, 0, .1);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 section > button {

@@ -22,6 +22,11 @@ const NavMenu = () => {
             Projects
           </a>
         </li>
+        <li>
+          <a className="menu__item" href="#">
+            Resume
+          </a>
+        </li>
       </ul>
     </div>
   );
