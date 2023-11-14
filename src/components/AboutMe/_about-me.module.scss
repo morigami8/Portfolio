@@ -1,0 +1,49 @@
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3c4a8e;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.about-me-content span {
+  border: 1px solid black;
+  height: 3em;
+}
+
+.how-it-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 374px) {
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  } 
+
+  .about-me-content span {
+    display: inline-block;
+    border: 1px solid black;
+    width: 75%;
+    height: 0;
+  }
+}
