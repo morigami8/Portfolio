@@ -41,8 +41,9 @@ body {
     background-color: #162052;
   }
 
-  .content {
+  .content h2{
     //border: 6px solid rgba(0, 0, 0, 0.3);
+    color: $brand-white;
   }
   .box {
     background: rgba(0, 0, 0, 0.4);
