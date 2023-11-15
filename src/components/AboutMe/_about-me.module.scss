@@ -33,7 +33,14 @@
   align-items: center;
 }
 
-@media (min-width: 374px) {
+.how-it-going {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 740px) {
   .about-me-content {
     display: flex;
     flex-direction: column;
@@ -45,5 +52,9 @@
     border: 1px solid black;
     width: 75%;
     height: 0;
+  }
+
+  .about-me-content p {
+    padding: 1em 1em;
   }
 }
