@@ -17,7 +17,7 @@ body {
     background-color: $brand-blue
   }
 
-  h1, h2, p, li > a {
+  h1, h2, h3, p, li > a {
     color: $brand-white
   }
 
@@ -126,7 +126,7 @@ body {
     display: none;
   }
 
-  
+
 }
 
 @media (min-width: 740px) {
