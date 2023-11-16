@@ -3,9 +3,9 @@ import styles from '../AboutMe/_about-me.module.scss';
 const AboutMe = () => {
   return (
     <section className={`${styles['about-me-container']} about-me-container`}>
-      <div className="about-me-title">
+      {/* <div className="about-me-title">
         <h2>The Story So Far</h2>
-      </div>
+      </div> */}
       <div className="about-me-content">
         <div className="how-it-started">
           <h3>How it started</h3>
@@ -24,7 +24,7 @@ const AboutMe = () => {
             nulla malesuada pellentesque.
           </p>
         </div>
-        <span></span>
+
         <div className="how-it-going">
           <h3>How it's Going</h3>
           <p>
