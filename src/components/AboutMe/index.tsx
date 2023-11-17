@@ -24,6 +24,9 @@ const AboutMe = () => {
             nulla malesuada pellentesque.
           </p>
         </div>
+        <div className="divisor">
+          <span></span>
+        </div>
 
         <div className="how-it-going">
           <h3>How it's Going</h3>
