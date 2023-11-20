@@ -14,25 +14,25 @@ export const NavBar = () => {
   return (
     <section className="header-nav">
       <ul className="nav-list">
-        <li className={`${styles['nav-link']} text`}>
+        <li className={`${styles['nav-link']} text hidden`}>
           <a
-            className="xs hidden md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
+            className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
             href="#"
           >
             About Me
           </a>
         </li>
-        <li className={`${styles['nav-link']}`}>
+        <li className={`${styles['nav-link']} hidden`}>
           <a
-            className="xs hidden md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
+            className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
             href="#"
           >
             Skills
           </a>
         </li>
-        <li className={`${styles['nav-link']}`}>
+        <li className={`${styles['nav-link']} hidden`}>
           <a
-            className="xs hidden md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
+            className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
             href="#"
           >
             Projects

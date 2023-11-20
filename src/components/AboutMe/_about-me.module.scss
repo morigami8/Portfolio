@@ -17,18 +17,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  //align-items: center;
-  //width: 100%;
 }
 
 .about-me-content .divisor {
   display: none;
-  // // justify-content: center;
-  // // align-items: center;
-  // // width: 20%;
-  // min-height: 100%;
-  // max-height: 100vh;
-  // margin: 0;
 }
 
 .about-me-content p {
@@ -63,9 +55,9 @@
 
   .about-me-content .divisor span {
     display: inline-block;
-    border: 2px dotted black;
+    border: 2px solid black;
     margin: 1em 0;
-    width: 70%;
+    width: 55%;
     height: 0;
   }
 

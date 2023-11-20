@@ -1,0 +1,20 @@
+body.dark-mode {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #2e2e2e;
+}
+
+body.dark-mode ::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 6px;
+  border: 3px solid #2e2e2e;
+}
+
+
