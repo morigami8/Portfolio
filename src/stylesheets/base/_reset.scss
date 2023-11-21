@@ -2,10 +2,7 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 
-// :root {
-//   scrollbar-width: thin;
-//   scrollbar-color: #444 #2e2e2e;
-// }
+
 
 body {
   padding: 0;
@@ -16,6 +13,7 @@ body {
 //Themes
 .dark {
   background-color: $brand-blue;
+  scrollbar-color: #444 #2e2e2e;
 
   .background {
     //background-color: #23272f
@@ -54,11 +52,9 @@ body {
     background: rgba(0, 0, 0, 0.4);
   }
 
-  body {
-    scrollbar-width: thin !important;
-    scrollbar-color: #444 #2e2e2e !important;
-  }
+
 }
+
 
 
 :is(.dark .hover\:bg-primary-dark):hover {
