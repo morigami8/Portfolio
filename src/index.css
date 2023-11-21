@@ -1,20 +1,13 @@
-body.dark-mode {
-  scrollbar-width: thin;
-  scrollbar-color: #444 #2e2e2e;
+.dark::-webkit-scrollbar {
+  width: 14px; /* Adjust the width of the scrollbar */
 }
 
-body.dark-mode ::-webkit-scrollbar {
-  width: 12px;
+.dark::-webkit-scrollbar-track {
+  background: #2e2e2e; /* The track of the scrollbar */
 }
 
-body.dark-mode ::-webkit-scrollbar-track {
-  background: #2e2e2e;
-}
-
-body.dark-mode ::-webkit-scrollbar-thumb {
-  background-color: #444;
-  border-radius: 6px;
-  border: 3px solid #2e2e2e;
-}
-
-
+.dark::-webkit-scrollbar-thumb {
+  background-color: #838181; /* The handle of the scrollbar */
+  border-radius: 6px; /* Optional: for rounded corners */
+  border: 3px solid #2e2e2e; /* Same as scrollbar-track, creating a uniform look */
+} 
