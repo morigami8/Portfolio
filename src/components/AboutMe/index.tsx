@@ -1,4 +1,5 @@
 import styles from '../AboutMe/_about-me.module.scss';
+import Icons from './Icons';
 
 const AboutMe = () => {
   return (
@@ -23,6 +24,7 @@ const AboutMe = () => {
             pharetra magna ac placerat vestibulum lectus. Mi tempus imperdiet
             nulla malesuada pellentesque.
           </p>
+          <Icons />
         </div>
         <div className="divisor">
           <span></span>
