@@ -8,18 +8,27 @@ interface Icon {
 }
 
 const Icons = () => {
-  const aboutMeIcons: Icon[] = [{ name: 'VB', label: <Fa500Px /> }];
+  const aboutMeIcons: Icon[] = [
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+    { name: 'VB', label: <Fa500Px /> },
+  ];
   return (
-    <div>
+    <section className="icons-container">
       {aboutMeIcons.map((item) => {
         return (
-          <div>
-            <h2>{item.name}</h2>
-            {item.label}
+          <div className="icon-box">
+            <h3>{item.name}</h3>
+            <span className="icon-label">{item.label}</span>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 
