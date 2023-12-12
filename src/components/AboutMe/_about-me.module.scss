@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: start;
 }
 
 .about-me-content .divisor {
@@ -67,7 +68,9 @@
   // }
 
   .about-me-content p {
-    padding: 1em 1em;
+    padding: 0 1em;
+    max-width: 100%;
+    word-wrap: break-word;
   }
 
   .about-me-content .how-it-going {
@@ -102,4 +105,8 @@
 .icon-label {
   //padding-bottom: 0.5em;
   font-size: 2.75em;
+}
+
+.how-it-started, .how-it-going {
+  overflow: auto;
 }
