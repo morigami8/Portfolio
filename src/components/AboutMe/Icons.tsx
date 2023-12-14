@@ -8,8 +8,11 @@ const Icons = ({ icons }: IconProps) => {
     <section className="icons-container">
       {icons.map((icon) => {
         return (
-          <div className="icon-box">
+          <div className="icon-box" key={icon.name}>
             <span className="icon-label">{icon.label}</span>
+            <div className="icon-tooltip">
+              <p>{icon.name}</p>
+            </div>
           </div>
         );
       })}

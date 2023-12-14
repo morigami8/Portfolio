@@ -91,6 +91,7 @@
 }
 
 .icon-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +102,34 @@
   width: 75px;
   background: #162052;
   color: white;
+
+  &:hover .icon-tooltip {
+    visibility: visible;
+    opacity: 1;
+    //transform: translateY(0);
+  }
   
+}
+
+.icon-tooltip {
+  position: absolute;
+  top: 100%; /* Positioning the tooltip below the icon */
+  left: 50%; /* Centering the tooltip */
+  transform: translateX(-50%) translateY(-1px); /* Adjust for exact positioning */
+  visibility: hidden; /* Hide initially */
+  opacity: 0; /* Hide initially */
+  transition: visibility 0s, opacity 0.5s linear, transform 0.5s; /* Smooth transition for tooltip appearance */
+  background-color: #333; /* Tooltip background */
+  color: white; /* Tooltip text color */
+  text-align: center;
+  border-radius: 3px;
+  z-index: 2; /* Ensure it's above other items */
+  white-space: nowrap; /* Prevents text wrapping in the tooltip */
+  margin-top: 5px;
+
+  p {
+    margin: 8px 0px;
+  }
 }
 
 .icon-label {
