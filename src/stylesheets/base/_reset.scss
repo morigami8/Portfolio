@@ -52,6 +52,10 @@ body {
     background: rgba(0, 0, 0, 0.4);
   }
 
+  .icon-tooltip {
+    background: $brand-blue;
+  }
+
 
 }
 
@@ -99,6 +103,13 @@ body {
   }
   .icon-label {
     color: #162052;
+  }
+  .icon-tooltip {
+    background: $brand-white;
+    p {
+
+      color: $brand-blue;
+    }
   }
 }
 

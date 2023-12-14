@@ -38,7 +38,6 @@
 .how-it-going {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
 }
 
@@ -63,11 +62,6 @@
     width: 55%;
   }
 
-  // .about-me-content span {
-  //   display: block;
-  //   border: 1px solid black;
-  // }
-
   .about-me-content p {
     padding: 0 1em;
     max-width: 100%;
@@ -82,15 +76,14 @@
 .icons-container {
   display: flex;
   flex-direction: row;
-  //justify-content: center;
   line-height: 5px;
   flex-wrap: wrap;
-  //padding-left: 1.5em;
   padding-bottom: 2em;
   align-self: center;
 }
 
 .icon-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,11 +94,34 @@
   width: 75px;
   background: #162052;
   color: white;
+
+  &:hover .icon-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
   
 }
 
+.icon-tooltip {
+  position: absolute;
+  top: 100%; 
+  left: 50%; 
+  transform: translateX(-50%) translateY(-1px); 
+  visibility: hidden; 
+  opacity: 0; 
+  transition: visibility 0s, opacity 0.5s linear, transform 0.5s; 
+  text-align: center;
+  border-radius: 3px;
+  z-index: 2; 
+  white-space: nowrap; 
+  margin-top: 5px;
+
+  p {
+    margin: 8px 0px;
+  }
+}
+
 .icon-label {
-  //padding-bottom: 0.5em;
   font-size: 2.75em;
 }
 
@@ -118,5 +134,6 @@
 }
 .how-it-started p, .how-it-going p {
  
-  flex: 1; /* Optional, makes the paragraph expand to fill the container */
+  flex: 1; 
+  //keep paragraphs at the same height
 }
