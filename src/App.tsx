@@ -3,6 +3,7 @@ import './stylesheets/index.scss';
 import { useThemeContext } from './context/hooks/useThemeContext.tsx';
 import Profile from './components/Profile/index.tsx';
 import AboutMe from './components/AboutMe/index.tsx';
+import Skills from './components/Skills/index.tsx';
 
 function App() {
   const { theme } = useThemeContext();
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Profile />
       <AboutMe />
+      <Skills />
     </div>
   );
 }
