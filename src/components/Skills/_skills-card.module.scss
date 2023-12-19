@@ -1,0 +1,43 @@
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  
+  flex-wrap: wrap;
+}
+
+.skill-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 30px;
+  //padding-right: 30px;
+}
+
+.skill-card {
+  background: #3c4a8e;
+  width: 250px;
+  height: 250px;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.skill-logo {
+  font-size: 3em;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.skill-label {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.skill-desc p {
+  
+}
+
+.skill-item {
+  padding-left: 15px;
+}
