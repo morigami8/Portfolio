@@ -56,6 +56,10 @@ body {
     background: $brand-blue;
   }
 
+  .skill-item {
+    color: $brand-white;
+  }
+
 
 }
 
@@ -110,6 +114,15 @@ body {
 
       color: $brand-blue;
     }
+  }
+
+  .skill-item {
+    color: $black-800;
+    
+  }
+
+  .skill-card {
+    background: $gray-300;
   }
 }
 

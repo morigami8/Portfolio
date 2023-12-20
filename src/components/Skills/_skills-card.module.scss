@@ -1,6 +1,6 @@
 .skills-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 30px;
   
   flex-wrap: wrap;
@@ -18,9 +18,15 @@
 .skill-card {
   background: #3c4a8e;
   width: 250px;
-  height: 250px;
+  max-height: 250px;
   word-wrap: normal;
   overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.skill-card:hover {
+  max-height: 1000px;
+  
 }
 
 .skill-logo {
@@ -35,9 +41,17 @@
 }
 
 .skill-desc p {
-  
+  padding-right: 10px;
 }
 
 .skill-item {
   padding-left: 15px;
+}
+
+
+//mobile screens
+@media (max-width: 740px) {
+  .skill-card-container{
+    justify-content: center;
+  }
 }
