@@ -18,14 +18,15 @@
 .skill-card {
   background: #3c4a8e;
   width: 250px;
-  max-height: 250px;
+  //max-height: 250px;
   word-wrap: normal;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
 }
 
 .skill-card:hover {
-  max-height: 1000px;
+  //max-height: 1000px;
+  overflow: visible
   
 }
 
