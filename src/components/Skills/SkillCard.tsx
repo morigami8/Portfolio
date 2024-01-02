@@ -1,20 +1,21 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Card } from './interfaces';
 
-interface SkillCards {
-  skills: Card[];
-}
-const SkillCard = ({ skills }: SkillCards) => {
+const SkillCard = ({ logo, label, description }: Card) => {
   const [isHovering, setIsHovering] = useState(false);
   const [maxHeight, setMaxHeight] = useState('250px');
 
-  const contentRef: any = useRef(null);
+  const contentRef: React.MutableRefObject<null> = useRef(null);
+  const fullHeight = useRef('250px');
 
-  const handleMoustEnter = () => {
+  useEffect(() => {
     if (contentRef.current) {
-      setMaxHeight(`${contentRef.current.scrollHeight}px`);
-      console.log('contentRef: ', contentRef.current.scrollHeight);
+      fullHeight.current = `${contentRef.current.scrollHeight}px`;
     }
+  }, []);
+  const handleMoustEnter = () => {
+    setMaxHeight(`${contentRef.current.scrollHeight}px`);
+    //console.log('contentRef: ', contentRef.current.scrollHeight);
     setIsHovering(true);
   };
 
@@ -24,29 +25,22 @@ const SkillCard = ({ skills }: SkillCards) => {
   };
 
   return (
-    <div className="skill-card-container">
-      {skills.map((skill, index) => {
-        return (
-          <div
-            className="skill-card"
-            key={index}
-            onMouseEnter={handleMoustEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{ maxHeight: maxHeight }}
-            ref={contentRef}
-          >
-            <div className="skill-logo skill-item">{skill.logo}</div>
-            <div className="skill-label skill-item">{skill.label}</div>
-            <div className="skill-desc skill-item">
-              <p>
-                {skill.description.length > 85 && !isHovering
-                  ? skill.description.substring(0, 84) + '...'
-                  : skill.description}
-              </p>
-            </div>
-          </div>
-        );
-      })}
+    <div
+      className={`skill-card ${label}`}
+      onMouseEnter={handleMoustEnter}
+      onMouseLeave={handleMouseLeave}
+      style={{ maxHeight: maxHeight }}
+      ref={contentRef}
+    >
+      <div className="skill-logo skill-item">{logo}</div>
+      <div className="skill-label skill-item">{label}</div>
+      <div className="skill-desc skill-item">
+        <p>
+          {description.length > 85 && !isHovering
+            ? description.substring(0, 84) + '...'
+            : description}
+        </p>
+      </div>
     </div>
   );
 };
