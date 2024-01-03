@@ -5,7 +5,7 @@ interface SkillCards {
   skills: Card[];
 }
 
-const SkillContainer = ({ skills }: SkillCards) => {
+const SkillsContainer = ({ skills }: SkillCards) => {
   return (
     <div className="skill-card-container">
       {skills.map((skill, index) => (
@@ -15,4 +15,4 @@ const SkillContainer = ({ skills }: SkillCards) => {
   );
 };
 
-export default SkillContainer;
+export default SkillsContainer;
