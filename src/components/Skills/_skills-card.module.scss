@@ -6,29 +6,59 @@
   flex-wrap: wrap;
 }
 
+// .skill-card-container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   gap: 20px;
+//   padding: 30px;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+
+
+//   .skill-card {
+//     background: #3c4a8e;
+//     flex: 0 1 250px;
+//     width: 250px;
+//     max-height: 250px; // Default height showing partial text
+//     overflow: hidden;
+//     transition: max-height 0.5s ease-in-out;
+//     word-wrap: break-word;
+//     cursor: pointer; // Optional, indicates the element is interactive
+
+//     &:hover {
+//       max-height: 1000px; // Increased height to show full text
+//     }
+//   }
+// }
+
 .skill-card-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // Creates a responsive grid
+  grid-gap: 20px; // Space between grid items
   padding: 30px;
-  //padding-right: 30px;
 }
 
 .skill-card {
+  display: flex;
+  flex-direction: column;
   background: #3c4a8e;
-  width: 250px;
-  //max-height: 250px;
-  word-wrap: normal;
+  max-height: 250px; // Initial height
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  word-wrap: break-word;
+  cursor: pointer;
+
+  &:hover {
+    max-height: 1000px; // Expanded height
+  }
+
+  p {
+    padding: 0 15px;
+  }
 }
 
-.skill-card:hover {
-  //max-height: 1000px;
-  overflow: visible
-  
-}
+
 
 .skill-logo {
   font-size: 3em;
@@ -39,10 +69,6 @@
 .skill-label {
   font-size: 1.5em;
   font-weight: 600;
-}
-
-.skill-desc p {
-  padding-right: 10px;
 }
 
 .skill-item {
