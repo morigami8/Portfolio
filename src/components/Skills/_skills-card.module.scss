@@ -34,7 +34,7 @@
 
 .skill-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // Creates a responsive grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Creates a responsive grid
   grid-gap: 20px; // Space between grid items
   padding: 30px;
 }
@@ -43,15 +43,14 @@
   display: flex;
   flex-direction: column;
   background: #3c4a8e;
-  max-height: 250px; // Initial height
+  max-height: 350px; // Initial height
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  //transition: max-height 0.5s ease-in-out;
   word-wrap: break-word;
-  cursor: pointer;
 
-  &:hover {
-    max-height: 1000px; // Expanded height
-  }
+  // &:hover {
+  //   max-height: 1000px; // Expanded height
+  // }
 
   p {
     padding: 0 15px;
