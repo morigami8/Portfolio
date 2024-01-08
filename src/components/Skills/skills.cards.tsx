@@ -1,46 +1,35 @@
 import { Card } from './interfaces';
-import { SiUml } from 'react-icons/si';
+import { SiUml, SiGithub, SiSpeedtest } from 'react-icons/si';
+import { RiSpeakLine, RiBook2Line } from 'react-icons/ri';
 export const skills: Card[] = [
   {
     label: 'App Design',
     logo: <SiUml />,
     description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus laoreet non curabitur gravida. Facilisis gravida neque convallis a cras semper auctor. Dictum sit amet justo donec.',
+      'Designing models, microservices, or high-level apps is critical in the SDLC. I use UML to help communicate effectively and collaborate with team members on key requirements. A visual helps keep the project in scope and clear to all stakeholders.',
   },
   {
-    label: 'App Design',
-    logo: <SiUml />,
+    label: 'Pipelines',
+    logo: <SiGithub />,
     description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus ',
+      'While Github is ubiquitous for version control and code review, I like to use Github Actions to create pipelines that can update docker containers or push code to cloud-native applications that accomplish CI/CD.',
   },
   {
-    label: 'App Design',
-    logo: <SiUml />,
+    label: 'Effective Communicator',
+    logo: <RiSpeakLine />,
     description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus ',
+      'Collaboration requires speaking with clarity to technical team members and with non-technical stakeholders alike.  I have led a small team and cross-departmental Zoom calls, driving and executing projects or timelines as the business needs.',
   },
   {
-    label: 'App Design',
-    logo: <SiUml />,
+    label: 'Test Driven Development',
+    logo: <SiSpeedtest />,
     description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus ',
+      "Not all functionality requires TDD; developers should know when it is most appropriate, but if time is permitted, it's a necessary tool that I use for foundationally good software.",
   },
   {
-    label: 'App Design',
-    logo: <SiUml />,
+    label: 'Continuous Learning',
+    logo: <RiBook2Line />,
     description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus ',
-  },
-  {
-    label: 'App Design',
-    logo: <SiUml />,
-    description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. Tellus molestie nunc non blandit massa enim nec. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim. Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit amet. Ut consequat semper viverra nam libero justo. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae tortor condimentum lacinia. Tempor orci eu lobortis elementum. Mauris ultrices eros in cursus turpis. Ornare quam viverra orci sagittis eu volutpat. Volutpat lacus ',
-  },
-  {
-    label: 'App Design',
-    logo: <SiUml />,
-    description:
-      'Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat diam ut venenatis tellus. volutpat est velit egestas. At volutpat diam ut venenatis tellus.',
+      'Experimenting with new libraries/tech stacks and reading dry technical books is (actually) fun to me because I either learn something new or it could be something I have seen before using different approaches or contexts, which expands my versatility as an engineer.',
   },
 ];
