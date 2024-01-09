@@ -1,5 +1,5 @@
 import { Card } from './interfaces';
-import { SiUml, SiGithub, SiSpeedtest } from 'react-icons/si';
+import { SiUml, SiGithub, SiSpeedtest, SiApplemusic } from 'react-icons/si';
 import { RiSpeakLine, RiBook2Line } from 'react-icons/ri';
 export const skills: Card[] = [
   {
@@ -31,5 +31,11 @@ export const skills: Card[] = [
     logo: <RiBook2Line />,
     description:
       'Experimenting with new libraries/tech stacks and reading dry technical books is (actually) fun to me because I either learn something new or it could be something I have seen before using different approaches or contexts, which expands my versatility as an engineer.',
+  },
+  {
+    label: 'Musician',
+    logo: <SiApplemusic />,
+    description:
+      'Music is a big part of my life as an alternative hobby outside coding.  I play drums, guitar, and cello.  I have some experience with piano, but that is next on my list to study.  I enjoy having a creative outlet playing solo or jamming with other musicians.',
   },
 ];
