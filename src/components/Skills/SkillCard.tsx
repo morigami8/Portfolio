@@ -1,7 +1,5 @@
 import { Card } from './interfaces';
 
-import React from 'react';
-
 const SkillCard = ({ logo, label, description }: Card) => {
   return (
     <div className={`skill-card ${label}`}>
