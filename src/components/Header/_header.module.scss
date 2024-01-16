@@ -6,6 +6,9 @@
   font-size: 1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 @media (max-width: 374px) {

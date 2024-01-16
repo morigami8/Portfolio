@@ -1,5 +1,5 @@
 import './_skills-card.module.scss';
-import { skills } from './skills.cards';
+import { skills } from './skillsData';
 import SkillsContainer from './SkillsContainer';
 
 const Skills = () => {
