@@ -4,6 +4,7 @@ import { useThemeContext } from './context/hooks/useThemeContext.tsx';
 import Profile from './components/Profile/index.tsx';
 import AboutMe from './components/AboutMe/index.tsx';
 import Skills from './components/Skills/index.tsx';
+import Projects from './components/Projects/index.tsx';
 
 function App() {
   const { theme } = useThemeContext();
@@ -14,6 +15,7 @@ function App() {
       <Profile />
       <AboutMe />
       <Skills />
+      <Projects />
     </div>
   );
 }
