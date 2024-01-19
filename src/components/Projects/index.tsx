@@ -17,8 +17,11 @@ const Projects = () => {
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-3xl font-semibold">{index + 1}</span>
+                  <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
+                    {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
+                    <h2 className="text-3xl font-semibold">Thumbathon</h2>
+                    <p>Create and Resize Thumbnails!</p>
+                    {/* create icons for projects -- like how it started/going */}
                   </CardContent>
                 </Card>
               </div>
