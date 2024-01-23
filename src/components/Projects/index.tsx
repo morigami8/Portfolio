@@ -1,9 +1,10 @@
 import FrontEndProjects from './FrontEndProjects';
 import FullStackProjects from './FullStackProjects';
+import styles from './_projects.module.scss';
 
 const Projects = () => {
   return (
-    <section className="flex small:flex-col justify-center">
+    <section className={`${styles[`projects-container`]} projects-container`}>
       <FullStackProjects />
       <FrontEndProjects />
     </section>
