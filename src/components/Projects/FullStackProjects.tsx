@@ -1,4 +1,10 @@
-import { Card, CardContent } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardTitle,
+} from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -20,12 +26,14 @@ const FullStackProjects = () => {
               <div className="p-1">
                 <Card>
                   <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-                    {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
-                    <h2 className="text-3xl font-semibold">Thumbathon</h2>
-                    <p>Create and Resize Thumbnails!</p>
-                    <h3>Stack</h3>
+                    <CardTitle>Thumbathon</CardTitle>
+                    <CardDescription>
+                      Create and Resize Thumbnails!
+                    </CardDescription>
+                    <CardFooter>
+                      <Icons icons={stackIcons} />
+                    </CardFooter>
                     {/* create icons for projects -- like how it started/going */}
-                    <Icons icons={stackIcons} />
                   </CardContent>
                 </Card>
               </div>
