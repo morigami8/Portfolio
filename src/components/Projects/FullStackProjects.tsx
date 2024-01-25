@@ -23,14 +23,14 @@ const FullStackProjects = () => {
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="">
-              <div className="p-1">
+              <div className="justify-center items-center">
                 <Card>
                   <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
                     <CardTitle>Thumbathon</CardTitle>
-                    <CardDescription>
+                    <CardDescription className="py-2">
                       Create and Resize Thumbnails!
                     </CardDescription>
-                    <CardFooter>
+                    <CardFooter className="p-2">
                       <Icons icons={stackIcons} />
                     </CardFooter>
                     {/* create icons for projects -- like how it started/going */}
