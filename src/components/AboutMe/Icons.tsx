@@ -8,10 +8,12 @@ const Icons = ({ icons }: IconProps) => {
     <section className="icons-container">
       {icons.map((icon) => {
         return (
-          <div className="icon-box" key={icon.name}>
-            <span className="icon-label">{icon.label}</span>
-            <div className="icon-tooltip">
-              <p>{icon.name}</p>
+          <div className="px-1 py-4 justify-center">
+            <div className="icon-box" key={icon.name}>
+              <span className="icon-label">{icon.label}</span>
+              <div className="icon-tooltip">
+                <p>{icon.name}</p>
+              </div>
             </div>
           </div>
         );
