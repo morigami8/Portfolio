@@ -73,12 +73,12 @@
   }
 }
 
-@media (max-width: 640px) {
-  .icons-container{
+// @media (max-width: 640px) {
+//   .icons-container{
 
-    justify-content: center;
-  }
-}
+//     //justify-content: center;
+//   }
+// }
 
 .icons-container {
   display: flex;
@@ -87,7 +87,7 @@
   flex-wrap: wrap;
   padding-bottom: 2em;
   //align-self: center;
-  //justify-content: flex-start;
+  justify-content: center;
 }
 
 .icon-box {

@@ -4,6 +4,7 @@ import {
   SiPostgresql,
   SiRabbitmq,
   SiTypescript,
+  SiReact,
 } from 'react-icons/si';
 
 export const stackIcons: Icon[] = [
@@ -11,4 +12,5 @@ export const stackIcons: Icon[] = [
   { name: 'Postgres', label: <SiPostgresql /> },
   { name: 'RabbitMQ', label: <SiRabbitmq /> },
   { name: 'TypeScript', label: <SiTypescript /> },
+  { name: 'React', label: <SiReact /> },
 ];
