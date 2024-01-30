@@ -1,4 +1,10 @@
-import { Card, CardContent } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardTitle,
+} from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -12,20 +18,22 @@ import Icons from '../AboutMe/Icons';
 const FrontEndProjects = () => {
   return (
     <div className="px-12 flex flex-col items-center">
-      <h2>Frontend Projects</h2>
+      <h2>Full Stack Projects</h2>
       <Carousel className="w-full max-w-sm">
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="">
-              <div className="p-1">
+              <div className="justify-center items-center">
                 <Card>
                   <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-                    {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
-                    <h2 className="text-3xl font-semibold">Thumbathon</h2>
-                    <p>Create and Resize Thumbnails!</p>
-                    <h3>Stack</h3>
+                    <CardTitle>Thumbathon</CardTitle>
+                    <CardDescription className="py-2">
+                      Create and Resize Thumbnails!
+                    </CardDescription>
+                    <CardFooter className="p-2">
+                      <Icons icons={stackIcons} />
+                    </CardFooter>
                     {/* create icons for projects -- like how it started/going */}
-                    <Icons icons={stackIcons} />
                   </CardContent>
                 </Card>
               </div>
