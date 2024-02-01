@@ -7,9 +7,9 @@ import {
 } from '@/components/ui/card';
 import { CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import Icons from '../AboutMe/Icons';
-import { Project } from './interfaces';
+import { CarouselProject } from './interfaces';
 
-const CarouselProjectItem = (list: Project[]) => {
+const CarouselProjectItem = ({ list }: CarouselProject) => {
   return (
     <CarouselContent>
       {list.map((item, index) => (
