@@ -6,12 +6,12 @@ import {
 import CarouselProjectItem from './CarouselProjectItem';
 import { CarouselProject } from './interfaces';
 
-const CarouselContainer = ({ title, projectList }: CarouselProject) => {
+const CarouselContainer = ({ title, list }: CarouselProject) => {
   return (
     <div className="px-12 flex flex-col items-center">
       <h2>{title}</h2>
       <Carousel className="w-full max-w-sm">
-        <CarouselProjectItem {...projectList} />
+        <CarouselProjectItem list={list} title={''} />
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>

@@ -7,5 +7,5 @@ export interface Project {
 }
 export interface CarouselProject {
   title: string;
-  projectList: Project[];
+  list: Project[];
 }
