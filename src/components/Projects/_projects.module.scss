@@ -1,7 +1,20 @@
+@use '../../stylesheets/abstracts/colors' as *;
+
+.projects-base {
+  padding: 1em;
+  h2 {
+    font-size: 3em;
+  }
+}
+
 .projects-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.card-content {
+  background: $brand-blue
 }
 
 @media (max-width: 1024px) {

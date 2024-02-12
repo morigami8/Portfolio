@@ -31,7 +31,7 @@ const FrontEndProjects = () => {
                       Create and Resize Thumbnails!
                     </CardDescription>
                     <CardFooter className="p-2">
-                      <Icons icons={stackIcons} />
+                      <Icons icons={stackIcons} background="#162052" />
                     </CardFooter>
                     {/* create icons for projects -- like how it started/going */}
                   </CardContent>

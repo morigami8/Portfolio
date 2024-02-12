@@ -6,10 +6,14 @@ import { FullStackProjects } from './fullStackProjects.carousel';
 
 const Projects = () => {
   return (
-    <section className={`${styles[`projects-container`]} projects-container`}>
-      {/* <FullStackProjects />
+    <section className="projects-base">
+      <h2>PROJECTS</h2>
+      <div className={`${styles[`projects-container`]} projects-container`}>
+        {/* <FullStackProjects />
       <FrontEndProjects /> */}
-      <CarouselContainer {...FullStackProjects} />
+        <CarouselContainer {...FullStackProjects} />
+        <CarouselContainer {...FullStackProjects} />
+      </div>
     </section>
   );
 };
