@@ -2,6 +2,7 @@
 // import FullStackProjects from './FullStackProjects';
 import styles from './_projects.module.scss';
 import CarouselContainer from './CarouselContainer';
+import { FrontendProjects } from './frontendProjects.carousel';
 import { FullStackProjects } from './fullStackProjects.carousel';
 
 const Projects = () => {
@@ -12,7 +13,7 @@ const Projects = () => {
         {/* <FullStackProjects />
       <FrontEndProjects /> */}
         <CarouselContainer {...FullStackProjects} />
-        <CarouselContainer {...FullStackProjects} />
+        <CarouselContainer {...FrontendProjects} />
       </div>
     </section>
   );
