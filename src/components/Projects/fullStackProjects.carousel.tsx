@@ -7,7 +7,7 @@ import {
 } from 'react-icons/si';
 import { CarouselProject } from './interfaces';
 export const FullStackProjects: CarouselProject = {
-  title: 'FullStack',
+  title: 'Fullstack',
   list: [
     {
       title: 'Thumbathon',
