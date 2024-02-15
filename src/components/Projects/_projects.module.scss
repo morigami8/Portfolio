@@ -17,6 +17,17 @@
   background: $brand-blue
 }
 
+.carousel {
+  width: 24rem;
+}
+
+@media (max-width: 768px) {
+ 
+.carousel {
+  width: 20rem;
+} 
+}
+
 @media (max-width: 1024px) {
   .projects-container{
     flex-direction: column;
