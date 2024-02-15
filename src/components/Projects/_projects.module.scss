@@ -11,10 +11,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 2em;
 }
 
 .card-content {
   background: $brand-blue
+}
+
+.carousel {
+  width: 24rem;
+}
+
+@media (max-width: 768px) {
+ 
+.carousel {
+  width: 20rem;
+} 
 }
 
 @media (max-width: 1024px) {

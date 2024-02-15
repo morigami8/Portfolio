@@ -17,7 +17,7 @@ const CarouselProjectItem = ({ list }: CarouselProject) => {
         <CarouselItem key={index} className="">
           <div className="justify-center items-center">
             <Card>
-              <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-6">
+              <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-1">
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription className="py-2">
                   {item.description}
