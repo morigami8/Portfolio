@@ -41,14 +41,14 @@ export const NavBar = () => {
         <li className={`${styles['nav-link']}`}>
           <button
             onClick={handleOnClick}
-            className="width-12 height-12 rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark"
+            className="width-12 height-12 rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark text-xl"
           >
             {theme === 'light' ? <FaMoon /> : <FaSun />}
           </button>
         </li>
         <li className={`${styles['nav-link']}`}>
           <a
-            className="width-12 height-12 flex rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark"
+            className="width-12 height-12 flex rounded-full justify-center items-center hover:bg-primary hover:bg-primary-dark text-xl"
             href="https://github.com/morigami8"
           >
             {' '}
