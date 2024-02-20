@@ -11,8 +11,8 @@ const AboutMe = () => {
       </div> */}
       <div className="about-me-content">
         <div className="how-it-started">
-          <h3>How it started</h3>
-          <p>
+          <h2>How it Started</h2>
+          <p className="py-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem
             nulla pharetra diam sit amet. Lacinia at quis risus sed vulputate
@@ -33,7 +33,7 @@ const AboutMe = () => {
         </div>
 
         <div className="how-it-going">
-          <h3>How it's Going</h3>
+          <h2>How it's Going</h2>
           <p>
             Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat
             diam ut venenatis tellus. Tellus molestie nunc non blandit massa
