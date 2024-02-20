@@ -25,7 +25,7 @@
 }
 
 .about-me-content p {
-  padding: 0em 1em;
+  padding: 5px 1.3em;
 }
 
 .how-it-started {
@@ -33,12 +33,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 .how-it-going {
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 800px) {
@@ -63,7 +69,7 @@
   }
 
   .about-me-content p {
-    padding: 0 1em;
+    padding: px 1em;
     max-width: 100%;
     word-wrap: break-word;
   }
@@ -86,6 +92,7 @@
   line-height: 5px;
   flex-wrap: wrap;
   padding-bottom: 2em;
+  padding-top: 1em;
   //align-self: center;
   justify-content: center;
 }
