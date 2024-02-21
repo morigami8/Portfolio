@@ -16,7 +16,7 @@ const AboutMe = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem
             nulla pharetra diam sit amet. Lacinia at quis risus sed vulputate
-            odio ut enim. Elit sed vulputate mi sit amet. Ut placerat orci nulla
+            odio ut enim. Elit sed vulputate mi sit amet. Ut placerat orci null
             pellentesque. Dis parturient montes nascetur ridiculus mus mauris
             vitae ultricies leo. Sagittis orci a scelerisque purus semper. Sit
             amet tellus cras adipiscing enim eu turpis. Eget nunc lobortis

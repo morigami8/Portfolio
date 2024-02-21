@@ -63,6 +63,9 @@ body {
   .projects-base {
     background: #3c4a8e;
   }
+  .card-content {
+    background: $brand-blue
+  }
 
 }
 
@@ -126,6 +129,10 @@ body {
 
   .skill-card {
     background: $gray-300;
+  }
+
+  .card-content {
+    background: $brand-white
   }
 }
 
