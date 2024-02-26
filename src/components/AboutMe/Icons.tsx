@@ -10,7 +10,7 @@ const Icons = ({ icons, background }: IconProps) => {
       {icons.map((icon) => {
         return (
           <div className="justify-center">
-            <div style={{ background }} className="icon-box" key={icon.name}>
+            <div className="icon-box" key={icon.name}>
               <span className="icon-label">{icon.label}</span>
               <div className="icon-tooltip">
                 <p>{icon.name}</p>
