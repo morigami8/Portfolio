@@ -8,7 +8,7 @@ import { FullStackProjects } from './fullStackProjects.carousel';
 const Projects = () => {
   return (
     <section className="projects-base">
-      <h2>PROJECTS</h2>
+      <h2>Projects</h2>
       <div className={`${styles[`projects-container`]} projects-container`}>
         {/* <FullStackProjects />
       <FrontEndProjects /> */}
