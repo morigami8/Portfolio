@@ -8,22 +8,22 @@ const NavMenu = () => {
 
       <ul className="menu__box">
         <li>
-          <a className="menu__item" href="#">
+          <a className="menu__item" href="#about-me">
             About Me
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
+          <a className="menu__item" href="#skills">
             Skills
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
+          <a className="menu__item" href="#projects">
             Projects
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
+          <a className="menu__item" href="#resume">
             Resume
           </a>
         </li>
