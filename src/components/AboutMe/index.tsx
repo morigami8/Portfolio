@@ -13,18 +13,11 @@ const AboutMe = () => {
         <div className="how-it-started">
           <h2>How it Started</h2>
           <p className="py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem
-            nulla pharetra diam sit amet. Lacinia at quis risus sed vulputate
-            odio ut enim. Elit sed vulputate mi sit amet. Ut placerat orci null
-            pellentesque. Dis parturient montes nascetur ridiculus mus mauris
-            vitae ultricies leo. Sagittis orci a scelerisque purus semper. Sit
-            amet tellus cras adipiscing enim eu turpis. Eget nunc lobortis
-            mattis aliquam faucibus. Mollis aliquam ut porttitor leo a diam
-            sollicitudin tempor. Porttitor massa id neque aliquam vestibulum
-            morbi. Facilisis sed odio morbi quis commodo odio. Pretium aenean
-            pharetra magna ac placerat vestibulum lectus. Mi tempus imperdiet
-            nulla malesuada pellentesque.
+            I studied Computer Science at Cal State Fullerton. Their curriculum
+            stack was in C++, my first and last interaction with that language.
+            In 2014, my first job was in Southern California at Flavorus (now
+            See Tickets), a ticketing company specializing in concerts and
+            festivals. Their stack was Visual Basic, XSLT and T-SQL.
           </p>
           <Icons icons={howItStartedIcons} />
         </div>
@@ -35,19 +28,13 @@ const AboutMe = () => {
         <div className="how-it-going">
           <h2>How it's Going</h2>
           <p>
-            Accumsan lacus vel facilisis volutpat est velit egestas. At volutpat
-            diam ut venenatis tellus. Tellus molestie nunc non blandit massa
-            enim nec. Porttitor rhoncus dolor purus non enim praesent elementum
-            facilisis leo. Morbi blandit cursus risus at ultrices mi tempus
-            imperdiet nulla. Ut placerat orci nulla pellentesque dignissim enim.
-            Nulla aliquet enim tortor at auctor. Sem nulla pharetra diam sit
-            amet. Ut consequat semper viverra nam libero justo. Eget egestas
-            purus viverra accumsan in nisl nisi scelerisque eu. Amet massa vitae
-            tortor condimentum lacinia. Tempor orci eu lobortis elementum.
-            Mauris ultrices eros in cursus turpis. Ornare quam viverra orci
-            sagittis eu volutpat. Volutpat lacus laoreet non curabitur gravida.
-            Facilisis gravida neque convallis a cras semper auctor. Dictum sit
-            amet justo donec.
+            In 2015, I took a position at Meyer Corporation as a Web Systems
+            Admin, similar to what a DevOps position would be now. Eventually, I
+            got promoted and became a Frontend Programmer, creating internal
+            tools in React and Redux. Over the last two years, I have worked in
+            C# making cloud applications (Microsoft Azure). In my personal time,
+            I am developing and learning Go/Golang to leverage its powerful
+            concurrency features.
           </p>
           <Icons icons={howItsGoingIcons} />
         </div>
