@@ -5,7 +5,10 @@ import { howItsGoingIcons } from './howItsGoing.icons';
 
 const AboutMe = () => {
   return (
-    <section className={`${styles['about-me-container']} about-me-container`}>
+    <section
+      id="about-me"
+      className={`${styles['about-me-container']} about-me-container`}
+    >
       {/* <div className="about-me-title">
         <h2>The Story So Far</h2>
       </div> */}

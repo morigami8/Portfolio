@@ -4,7 +4,7 @@ import SkillsContainer from './SkillsContainer';
 
 const Skills = () => {
   return (
-    <section className="skills-container">
+    <section id="skills" className="skills-container">
       <h2>Skills</h2>
       <SkillsContainer skills={skills} />
     </section>

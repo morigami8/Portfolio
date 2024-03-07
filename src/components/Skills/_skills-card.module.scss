@@ -1,12 +1,13 @@
 .skills-container {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  //padding-left: 30px;
   
   flex-wrap: wrap;
 
   h2 {
     font-size: 3em;
+    padding-left: 20px;
   }
 }
 

@@ -2,6 +2,7 @@ import { Icon } from '../AboutMe/interfaces';
 
 export interface Project {
   title: string;
+  link: string;
   description: string;
   stackIcons: Icon[];
 }
