@@ -11,6 +11,7 @@ export const FullStackProjects: CarouselProject = {
   list: [
     {
       title: 'Thumbathon',
+      link: 'https://thumbathon-fe.onrender.com/',
       description: 'Create and Resize Thumbnails',
       stackIcons: [
         { name: 'NestJs', label: <SiNestjs /> },

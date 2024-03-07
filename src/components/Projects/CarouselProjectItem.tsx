@@ -17,15 +17,17 @@ const CarouselProjectItem = ({ list }: CarouselProject) => {
         <CarouselItem key={index} className="">
           <div className="justify-center items-center">
             <Card>
-              <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-1">
-                <CardTitle>{item.title}</CardTitle>
-                <CardDescription className="py-2">
-                  {item.description}
-                </CardDescription>
-                <CardFooter className="p-2">
-                  <Icons icons={item.stackIcons} background="#3c4a8e" />
-                </CardFooter>
-              </CardContent>
+              <a href={item.link} target="_blank">
+                <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-1">
+                  <CardTitle>{item.title}</CardTitle>
+                  <CardDescription className="py-2">
+                    {item.description}
+                  </CardDescription>
+                  <CardFooter className="p-2">
+                    <Icons icons={item.stackIcons} background="#3c4a8e" />
+                  </CardFooter>
+                </CardContent>
+              </a>
             </Card>
           </div>
         </CarouselItem>
