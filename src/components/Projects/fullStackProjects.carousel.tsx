@@ -21,5 +21,11 @@ export const FullStackProjects: CarouselProject = {
         { name: 'React', label: <SiReact /> },
       ],
     },
+    {
+      title: 'Coming soon!',
+      description: 'Collabrotive Word Doc - Using GO/React',
+      link: '',
+      stackIcons: [],
+    },
   ],
 };
