@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className={`${styles['about-me-container']} about-me-container`}
+      className={`${styles['about-me-container']} about-me-container pt-4`}
     >
       {/* <div className="about-me-title">
         <h2>The Story So Far</h2>

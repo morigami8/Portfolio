@@ -17,7 +17,7 @@ export const NavBar = () => {
         <li className={`${styles['nav-link']} text hidden`}>
           <a
             className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
-            href="#"
+            href="#about-me"
           >
             About Me
           </a>
@@ -25,7 +25,7 @@ export const NavBar = () => {
         <li className={`${styles['nav-link']} hidden`}>
           <a
             className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
-            href="#"
+            href="#skills"
           >
             Skills
           </a>
@@ -33,7 +33,7 @@ export const NavBar = () => {
         <li className={`${styles['nav-link']} hidden`}>
           <a
             className="xs md:flex hover:bg-primary hover:bg-primary-dark rounded-full"
-            href="#"
+            href="#projects"
           >
             Projects
           </a>
