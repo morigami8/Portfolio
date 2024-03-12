@@ -15,16 +15,28 @@ const CarouselProjectItem = ({ list }: CarouselProject) => {
     <CarouselContent>
       {list.map((item, index) => (
         <CarouselItem key={index} className="">
-          <div className="justify-center items-center">
+          <div className="justify-center items-center w-80 h-80">
             <Card>
-              <a href={item.link} target="_blank">
-                <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-1">
+              <a
+                href={item.link}
+                onClick={(e) => {
+                  if (item.link === '#') {
+                    e.preventDefault();
+                  }
+                }}
+                target="_blank"
+                style={{
+                  pointerEvents: item.link === '#' ? 'none' : 'auto',
+                  cursor: item.link === '#' ? 'default' : 'pointer',
+                }}
+              >
+                <CardContent className="card-content flex flex-col aspect-square items-center justify-center p-2">
                   <CardTitle>{item.title}</CardTitle>
                   <CardDescription className="py-2">
                     {item.description}
                   </CardDescription>
                   <CardFooter className="p-2">
-                    <Icons icons={item.stackIcons} background="#3c4a8e" />
+                    <Icons icons={item.stackIcons} />
                   </CardFooter>
                 </CardContent>
               </a>

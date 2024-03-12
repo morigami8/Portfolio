@@ -24,7 +24,7 @@ export const FullStackProjects: CarouselProject = {
     {
       title: 'Coming soon!',
       description: 'Collabrotive Word Doc - Using GO/React',
-      link: '',
+      link: '#',
       stackIcons: [],
     },
   ],
