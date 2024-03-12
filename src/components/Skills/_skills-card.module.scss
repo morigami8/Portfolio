@@ -10,7 +10,9 @@
     padding-left: 20px;
   }
 }
-
+#skills {
+  scroll-margin-top: 100px;
+}
 .skill-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

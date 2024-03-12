@@ -2,9 +2,8 @@ import { Icon } from './interfaces';
 
 type IconProps = {
   icons: Icon[];
-  background: string;
 };
-const Icons = ({ icons, background }: IconProps) => {
+const Icons = ({ icons }: IconProps) => {
   return (
     <section className="icons-container">
       {icons.map((icon) => {
