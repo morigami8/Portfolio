@@ -15,7 +15,7 @@ const CarouselProjectItem = ({ list }: CarouselProject) => {
     <CarouselContent>
       {list.map((item, index) => (
         <CarouselItem key={index} className="">
-          <div className="justify-center items-center w-80 h-80">
+          <div className="justify-center items-center">
             <Card>
               <a
                 href={item.link}
