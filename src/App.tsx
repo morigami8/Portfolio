@@ -5,6 +5,7 @@ import Profile from './components/Profile/index.tsx';
 import AboutMe from './components/AboutMe/index.tsx';
 import Skills from './components/Skills/index.tsx';
 import Projects from './components/Projects/index.tsx';
+import Resume from './components/Resume/index.tsx';
 
 function App() {
   const { theme } = useThemeContext();
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Resume />
     </div>
   );
 }
