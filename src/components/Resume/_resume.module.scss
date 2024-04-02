@@ -1,0 +1,14 @@
+@use '../../stylesheets/abstracts/colors' as *; 
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  span {
+    color: blue;
+  }
+  span:hover {
+    color: rgba(0, 0, 255, 0.741);
+  }
+}
