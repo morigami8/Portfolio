@@ -4,7 +4,7 @@ const Profile = () => {
     <div className={`${styles['portfolio-image']} portfolio-image`} id="start">
       <div className="box">
         <div className="content">
-          <img src="../../../public/66B3E9E9-B888-43B9-91E0-C6BA740565D7.jpeg" />
+          <img src="https://res.cloudinary.com/dl8likjsr/image/upload/v1692677135/66B3E9E9-B888-43B9-91E0-C6BA740565D7_gagsku.jpg" />
           <h2>
             Morgan Atwood
             <br />
