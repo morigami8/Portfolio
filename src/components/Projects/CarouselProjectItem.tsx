@@ -4,8 +4,8 @@ import {
   CardDescription,
   CardFooter,
   CardTitle,
-} from '@/components/ui/card';
-import { CarouselContent, CarouselItem } from '@/components/ui/carousel';
+} from '../../components/ui/card';
+import { CarouselContent, CarouselItem } from '../ui/carousel';
 import Icons from '../AboutMe/Icons';
 import { CarouselProject } from './interfaces';
 //import styles from './_projects.module.scss';

@@ -60,11 +60,24 @@ body {
     color: $brand-white;
   }
 
+
   .projects-base {
     background: #3c4a8e;
   }
   .card-content {
     background: $brand-blue
+  }
+
+  .resume-container {
+    span {
+      color: #fab624;
+    }
+
+    span:hover {
+      text-decoration: underline;
+      color: #F6AD55;
+
+    }
   }
 
 }

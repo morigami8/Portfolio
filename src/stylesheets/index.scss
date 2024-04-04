@@ -2,22 +2,26 @@
 
 // index.scss
 // 1. Abstracts
-@use 'abstracts/breakpoints';  // Ensuring that breakpoints are utilized correctly
-@use 'abstracts/mixins';
+@use 'abstracts/_breakpoints';  // Ensuring that breakpoints are utilized correctly
+@use 'abstracts/_mixins';
 
 // 2. Components
-@import 'components/button';  // @import is fine if you don't use variables/mixins/functions from it
+@use 'components/_button';  // @import is fine if you don't use variables/mixins/functions from it
 
 // 3. Themes
-@import 
-  'themes/dark',
-  'themes/default';
+@use 'themes/_dark';
+@use 'themes/_default';
 
 // 4. Themes
-@import 
-  'layouts/header';
+@use 'layouts/_header';
 
 // 5. Base
-@import
-  'base/reset';
+@use 'base/_reset';
 
+//6. Partials
+@use '../components/AboutMe/about-me.module';
+@use '../components/Header/header-nav.module';
+@use '../components/Profile/profile.module';
+@use '../components/Projects/projects.module';
+@use '../components/Resume/resume.module';
+@use '../components/Skills/skills-card.module';

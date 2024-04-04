@@ -1,4 +1,4 @@
-@use '../../stylesheets/abstracts/colors' as *; 
+@use '../../stylesheets/abstracts/_colors' as *; 
 
 .resume-container {
   display: flex;
@@ -6,9 +6,9 @@
   align-items: center;
   font-size: 2em;
   span {
-    color: blue;
+    color: #542c80
   }
   span:hover {
-    color: rgba(0, 0, 255, 0.741);
+    text-decoration: underline;
   }
 }

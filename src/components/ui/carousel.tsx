@@ -7,8 +7,9 @@ import {
 } from 'embla-carousel';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { cn } from '../../lib/utils';
+//'@/lib/utils';
+import { Button } from '../../components/ui/button';
 
 type CarouselProps = {
   opts?: CarouselOptions;

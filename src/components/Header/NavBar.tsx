@@ -1,5 +1,5 @@
 import { FaGithub, FaMoon, FaSun } from 'react-icons/fa';
-import styles from './_header.module.scss';
+import styles from './_header-nav.module.scss';
 import { useThemeContext } from '../../context/hooks/useThemeContext';
 import { Theme } from '../../context/ThemeContext';
 
