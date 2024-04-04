@@ -1,8 +1,4 @@
-import {
-  Carousel,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
+import { Carousel, CarouselNext, CarouselPrevious } from '../ui/carousel';
 import CarouselProjectItem from './CarouselProjectItem';
 import { CarouselProject } from './interfaces';
 

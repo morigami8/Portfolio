@@ -1,10 +1,10 @@
-import MyResume from '../../../public/resume.pdf';
+import MyResume from '../../resume.pdf';
 import styles from './_resume.module.scss';
 
 const Resume = () => {
   return (
     <div
-      className={`${styles['resume-container']} resume-container py-4`}
+      className={`${styles['resume-container']} resume-container py-6`}
       id="resume"
     >
       <h2>
