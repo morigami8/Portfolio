@@ -10,7 +10,7 @@ const Profile = () => {
             <br />
             <span>Full Stack Developer</span>
           </h2>
-          <a href="#">Hire</a>
+          <a href="mailto:atwood.morganj@gmail.com">Hire</a>
         </div>
       </div>
     </div>
